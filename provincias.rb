@@ -4,7 +4,6 @@
       execute "LOAD DATA LOCAL INFILE 'db/provincias.csv'
         INTO TABLE provincias
         FIELDS TERMINATED BY ';'
-        LINES TERMINATED BY '\n'
         (id, nombre, region_id)
         SET created_at=NOW(), updated_at=NOW();"
     end
